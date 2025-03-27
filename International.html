@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Tours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+
+        .navbar {
+            background: transparent;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .tour-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tour-card {
+            position: relative;
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+        }
+
+        .tour-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        .tour-info {
+            position: relative;
+            padding: 15px;
+            z-index: 2;
+        }
+
+        .tour-info h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ff5733;
+            font-size: 16px;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .explore-btn:hover {
+            background: orange;
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .back-home a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00C8FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .back-home a:hover {
+            background: #009dd1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="header">
+        Our Best Seller Tour Packages in Domestic Destinations
+    </div>
+
+    <div class="tour-container">
+        <div class="tour-card" style="background: url('italy.jpg') no-repeat center center; background-size: cover;">
+            <div class="tour-info">
+                <h3>Italy Package</h3>
+                <p class="price">PHP ****/PAX</p>
+                <a href="italy-package.html" class="explore-btn">Explore more →</a>
+            </div>
+        </div>
+
+        <div class="tour-card" style="background: url('dubai.jpg') no-repeat center center; background-size: cover;">
+            <div class="tour-info">
+                <h3>Dubai Package</h3>
+                <p class="price">PHP ****/PAX</p>
+                <a href="dubai-package.html" class="explore-btn">Explore more →</a>
+            </div>
+        </div>
+
+        <div class="tour-card" style="background: url('japan.jpg') no-repeat center center; background-size: cover;">
+            <div class="tour-info">
+                <h3>Japan Package</h3>
+                <p class="price">PHP ****/PAX</p>
+                <a href="japan-package.html" class="explore-btn">Explore more →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-home">
+        <a href="tours.html">Go Back</a>
+    </div>
+
+</body>
+</html>

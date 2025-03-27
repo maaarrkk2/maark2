@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funliparan Travels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            text-align: center;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url('palawan-bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .header {
+            padding: 20px;
+        }
+        .header img {
+            width: 150px;
+        }
+        .contact {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .package {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            margin: 20px 0;
+        }
+        .sub-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .package-list {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+            font-size: 16px;
+        }
+        .itinerary {
+            margin-top: 40px;
+        }
+        .itinerary-title {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        hr {
+            width: 50%;
+            border: 1px solid black;
+        }
+        .home-button {
+            margin: 30px 0;
+        }
+        .home-button a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00C8FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+        }
+        .home-button a:hover {
+            background: #008bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="banner-text">PALAWAN TOUR PACKAGE </div>
+    </div>
+
+    <div class="header">
+        <img src="logo.png" alt="FUNLIPARAN TRAVELS">
+        <h2>FUNLIPARAN TRAVELS</h2>
+        <p class="contact">
+            Website: magpalawantours.com<br>
+            Email: info@magpalawantours.com<br>
+            Mobile/WhatsApp: (+63)917-532-8887 (Globe) / (+63)918-584-3122 (Smart)
+        </p>
+    </div>
+
+    <div class="package">Package A (Based on Twin/Triple Sharing Room)</div>
+    <div class="sub-text">(Minimum of 2 persons)</div>
+    <div class="package-list">
+        Rodolfo Royale Hotel/Balay Inato PHP 4,400.00/PERSON<br>
+        Ysabelle Mansion PHP 4,300.00/PERSON<br>
+        Asturias Hotel PHP 5,800.00/PERSON<br>
+        Infinite Green Pension/Royale Parc Hotel PHP 5,800.00/PERSON<br>
+        Southwind Resort PHP 7,100.00/PERSON<br>
+        Canvas Hotel PHP 7,500.00/PERSON<br>
+    </div>
+
+    <div class="package">Group Package A (Based on Group Sharing Room)</div>
+    <div class="sub-text">(Minimum of 6 persons)</div>
+    <div class="package-list">
+        Ysabelle Mansion Inn PHP 3,600/PERSON<br>
+        Infinite Green Pension PHP 5,800.00/PERSON<br>
+        Flores De Musa Inn PHP 5,600/PERSON<br>
+    </div>
+
+    <hr>
+
+    <div class="itinerary">
+        <div class="itinerary-title">PROPOSED ITINERARY:</div>
+        <p>
+            Day 1<br>
+            8:30AM - Arrival<br>
+            9:30AM - To Accommodation<br>
+            3:30PM - City Tour<br>
+            5:30PM - Back to the accommodation
+        </p>
+    </div>
+
+    <div class="home-button">
+        <a href="domestic.html">Go Back</a>
+    </div>
+
+</body>
+</html>
